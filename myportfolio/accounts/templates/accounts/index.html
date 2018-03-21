@@ -1,0 +1,79 @@
+{% extends 'accounts/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<main>
+	<div class="banner" style="margin-top: -251px;">
+			<div class="container">
+				<div class="banner-wrap">
+					<div class="banner-left">
+						<p> There is no greatness where simplicity, goodness and truth are absent. <br>--Leo Tolstoy
+						</p>
+
+						<a href="{% url 'portfolio' %}" class="btn btn-default">See My Work</a>
+					</div>
+
+					<div class="banner-right">
+						<div id="bn">
+							<br><br><br>
+							< Code ><br>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp< Like Your Life Depends On It. ><br>
+							< Code />
+						</div>
+						
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="top-section">
+		<div class="container">
+ 			<div class="col4-layout">
+	 				<div class="col">
+	 					<div class="main-content js--wp-1" style="padding-left: 15px; padding-right: 15px;">
+							<h3> A Little About Me</h3>
+		  					<p>• Csit Student<br>• Tech Geek<br>• Portraitist<br>• Model Citizen<br>
+		  						-------------------------------------------
+		  					<a id="more" href="{% url 'about' %}"> &nbspread more>></a>
+		  					<h3> Projects</h3>
+		  					<p>• Blog application<br>• Social Media Site<br>• Ecommerce site<br>
+		  						-------------------------------------------
+		  					<a id="more" href="{% url 'portfolio' %}"> &nbspread more>></a>
+		  					</p>	
+		  				</div>
+	 				</div>
+					
+					<div class="col">
+ 						<div class="main-content" style="padding-left: 12px; padding-right: 12px">
+ 							<h3> My Drawings</h3>
+		  					<div class="front-photo">
+		  						<img style="height: 179px; padding-left: 0px" src="{% static 'images/Img-01.jpg' %}">
+			  					<img style="height: 179px; padding-left: 0px" src="{% static 'images/Img-02.jpg' %}">
+		  					</div>
+ 						</div>
+					</div>
+
+		  			<div class="col">
+ 						<div class="main-content" style="padding-left: 12px;">
+ 							<h3> CAN-Info</h3>
+		  					<div class="front-photo">
+		  						<img style="height: 179px; padding-left: 0px" src="{% static 'images/Img-03.jpg' %}">
+			  					<img style="height: 179px; padding-left: 0px" src="{% static 'images/Img-04.jpg' %}">
+		  					</div>
+ 						</div>
+					</div>
+
+	 				<div class="col">
+ 						<div class="main-content" style="padding-left: 12px;">
+ 							<h3> Photography</h3>
+		  					<div class="front-photo">
+		  						<img style="height: 179px; padding-left: 0px" src="{% static 'images/Img-05.jpg' %}">
+			  					<img style="height: 179px; padding-left: 0px" src="{% static 'images/Img-06.jpg' %}">
+		  					</div>
+		  						<a id="more" href="{% url 'photos' %}"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp more>></a>
+ 						</div>
+					</div>
+
+
+		</div>
+	</div>
+</main>
+{% endblock %}

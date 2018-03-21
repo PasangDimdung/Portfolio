@@ -1,0 +1,49 @@
+{% extends 'accounts/base.html' %}
+{% block content %}
+<div class="container">
+	<p>
+		<h3>CONTACT:</h3>
+			<p><i class="fas fa-map-marker"></i> Address: <br> Banasthali, Kathmandu</p>
+
+			<div class="maps">
+				<div id="map" style="height:400px">
+			<script>
+    			  function initMap() {
+			        var uluru = {lat: 27.724605, lng: 85.298949};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 16,
+			          center: uluru
+			        });
+			        var marker = new google.maps.Marker({
+			          position: uluru,
+			          map: map
+			        });
+			      }
+			    </script>
+    			<script async defer
+			    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm56GyJbW8u4ze2e4A9Quslm7t7vWpYB4
+					&callback=initMap">
+   			 	</script>
+			</div>
+
+			
+ </div>
+			<p><i class="far fa-envelope"></i> Email: pasangdimdung045@gmail.com</p>
+			<br>
+	</p>
+	
+	
+
+	<form class="form" method="POST">
+		<h4> <br>Thank you for visiting! Please reach out to pasangdimdung045@gmail.com or write below: </h4>
+  		<input type="text" name="firstname" placeholder="First Name"><br>
+  		<input type="text" name="lastname" placeholder="Last Name"><br>
+  		<input type="email" name="email" placeholder="Email Address"><br>
+  		<input type="message" name="message" placeholder="Message"><br>
+  		<input type="submit" name="" value="Send">
+	</form>
+
+</div>
+{% endblock %}
+
+

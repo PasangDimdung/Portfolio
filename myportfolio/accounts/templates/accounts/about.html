@@ -1,0 +1,41 @@
+{% extends 'accounts/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="a">
+		<div class="container">
+ 			<div class="col-layout">
+ 				<div class="col">
+ 					<div class="banne-left">
+	  					<p>
+	  						<img src="{% static 'images/about.jpg' %}">
+	  					</p>
+ 					</div>
+ 				</div>
+
+ 					<div class="col">
+ 					<div class="banne-right">
+						<h2 id="abt">ABOUT</h2>
+						<p id="about">
+									An enthusiastic, tech geek: progressive in thought, undergraduate student, portraitist.
+						</p>
+
+						<div id='abt1'>
+								<p>
+								College: Amrit Science Campus (ASCOL), Kathmandu, Nepal
+							</p>
+							<p>
+								Faculty: Bachelor's in Computer Science and Information Technology (Bsc.Csit)
+							</p>
+							<p>
+								Programming Skills: Python, Django, HTML, CSS, Bootstrap, Javascript, JQuery, C
+							</p>
+							<p>
+								Other skills: Drawing
+							</p>
+						</div>
+					</div>
+ 					</div>
+ 				</div>
+ 			</div>
+		</div>
+{% endblock %}

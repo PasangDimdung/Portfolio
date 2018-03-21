@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head >
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Pasang Dimdung| Developer | Portraitist</title>
+	<link rel="icon" type="image/png" href="{% static 'images/django.png' %}">
+	<link rel="stylesheet" type="text/css" href="../static/css/accounts.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/queries.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+<body >
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="{% url 'base' %}">Portfolio</a>			
+			</div>
+			<nav class="navy js--navy">
+				<ul>
+					<li><a  href="{% url 'base' %}">Home</a></li>
+					<li><a  href="{% url 'about' %}">About</a></li>
+					<li><a  href="{% url 'portfolio' %}">Portfolio</a></li>
+					<li><a  href="{% url 'photos' %}">Photos</a></li>
+					<li><a  href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+
+			</nav>
+		</div>	
+	</header>
+</body>
+{% block content %}
+{% endblock %}
+
+
+<footer class="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="col4-layout footer-wrap">
+						<div class="col">
+							<div class="content-wrap">
+								<h3>Site Built On:</h3>
+								<p>Frontend: HTML|CSS|JavaScript</p>
+								<p>Backend: Python|Django</p>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="content-wrap">
+								<h3>Ongoing Projects:</h3>
+								<p>Social site: MultiUser</p>
+								<p>Ecommerce site</p>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="content-wrap">
+								<h3>Contact:</h3>
+								<p><i class="fas fa-map-marker"></i> Address: <br> Banasthali, Kathmandu</p>
+								<p><i class="far fa-envelope"></i> Email: pasangdimdung045@gmail.com</p>
+								<br>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="content-wrap">
+								<h3>Follow Me On:</h3>
+								<p>		      <i class="fab fa-twitter"></i> <a target="_blank" href="https://twitter.com/pasangdimdung">Twitter</a>
+
+										<br> <i class="fab fa-instagram"></i> <a target="_blank" href="https://www.instagram.com/pasang_dimdung/">Instagram</a>    
+										<br> <i class="fab fa-linkedin"></i>  <a target="_blank" href="https://www.linkedin.com/in/pasang-dimdung-0135b815a/">LinkedIn</a>  
+
+										<br> <i class="fab fa-facebook"></i>  <a target="_blank" href="https://www.facebook.com/dimdungpasang">Facebook</a>
+										
+										<br>  <i class="fab fa-github"></i>  <a target="_blank" href="https://github.com/PasangDimdung">GitHub</a> 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-btm">
+
+							<div class="row-wrap2" >
+								<h4>Portfolio © Copyright 2018. All Rights Reserved.</h4>
+							</div>
+
+							<div class="row-wrap3">
+								<h4>Designed by:  <span> Pasang.Dimdung</span></h4>
+							</div>
+						</div>
+				</div>
+
+
+				</div>
+			</div>
+
+				
+</footer>
+
+
+</html>
+
